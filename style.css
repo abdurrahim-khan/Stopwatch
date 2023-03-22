@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(42, 35, 66);
+}
+.time-container {
+    color: white;
+}
+.digit {
+    font-size: 150px;
+    font-weight: bold;
+    margin-left: 45px;
+}
+.text {
+    font-size: 45px;
+    font-weight: bold;
+}
+.btn-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.btn-container button {
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 25px;
+}
+.btn-container button:hover {
+    cursor: pointer;
+}
+#start {
+    background-color: rgb(87, 184, 87);
+}
+#pause {
+    background-color: rgb(223, 114, 114);
+}
+#reset {
+    background-color: rgb(131, 131, 230);
+}
