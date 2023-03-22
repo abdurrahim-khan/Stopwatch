@@ -6,14 +6,23 @@ let isRunning = false;
 let timeout_id;
 function start(){
     isRunning = true;
+    document.getElementById("start").disabled = true;
+    document.getElementById("pause").disabled = false;
+    document.getElementById("reset").disabled = false;
     timeout_id = setInterval(stopwatch,10);
 }
 function pause(){
     isRunning = false;
     //clearTimeout(timeout_id);
+    document.getElementById("start").disabled = false;
+    document.getElementById("pause").disabled = true;
+    document.getElementById("reset").disabled = false;
     clearInterval(timeout_id);
 }
 function reset(){
+    document.getElementById("start").disabled = false;
+    document.getElementById("pause").disabled = true;
+    document.getElementById("reset").disabled = true;
     isRunning = false;
     //clearTimeout(timeout_id);
     clearInterval(timeout_id);
